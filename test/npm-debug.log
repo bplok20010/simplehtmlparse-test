@@ -1,0 +1,27 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\nobo\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'build' ]
+2 info using npm@4.0.5
+3 info using node@v4.1.2
+4 verbose stack Error: Invalid name: "htmlparser test"
+4 verbose stack     at ensureValidName (C:\Users\nobo\AppData\Roaming\npm\node_modules\npm\node_modules\normalize-package-data\lib\fixer.js:336:15)
+4 verbose stack     at Object.module.exports.fixNameField (C:\Users\nobo\AppData\Roaming\npm\node_modules\npm\node_modules\normalize-package-data\lib\fixer.js:215:5)
+4 verbose stack     at C:\Users\nobo\AppData\Roaming\npm\node_modules\npm\node_modules\normalize-package-data\lib\normalize.js:32:38
+4 verbose stack     at Array.forEach (native)
+4 verbose stack     at normalize (C:\Users\nobo\AppData\Roaming\npm\node_modules\npm\node_modules\normalize-package-data\lib\normalize.js:31:15)
+4 verbose stack     at final (C:\Users\nobo\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:349:5)
+4 verbose stack     at then (C:\Users\nobo\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:124:5)
+4 verbose stack     at ReadFileContext.<anonymous> (C:\Users\nobo\AppData\Roaming\npm\node_modules\npm\node_modules\read-package-json\read-json.js:295:20)
+4 verbose stack     at ReadFileContext.callback (C:\Users\nobo\AppData\Roaming\npm\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:78:16)
+4 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:303:13)
+5 verbose cwd D:\wamp\www\github-projects\htmlparser
+6 error Windows_NT 6.1.7601
+7 error argv "D:\\nodejs\\node.exe" "C:\\Users\\nobo\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "run" "build"
+8 error node v4.1.2
+9 error npm  v4.0.5
+10 error Invalid name: "htmlparser test"
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]

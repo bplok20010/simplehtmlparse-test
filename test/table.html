@@ -1,0 +1,106 @@
+<table class="dataintable">
+    <tbody>
+        <tr>
+            <th colspan="2">节点类型</th>
+            <th>描述</th>
+            <th>子节点</th>
+        </tr>
+
+        <tr>
+            <td style="width:5%;">1</td>
+            <td style="width:25%;">Element</td>
+            <td style="width:35%;">代表元素</td>
+            <td>Element, Text, Comment, ProcessingInstruction, CDATASection, EntityReference</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Attr</td>
+            <td>代表属性</td>
+            <td>Text, EntityReference</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Text</td>
+            <td>代表元素或属性中的文本内容。</td>
+            <td>None</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>CDATASection</td>
+            <td>代表文档中的 CDATA 部分（不会由解析器解析的文本）。</td>
+            <td>None</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>EntityReference</td>
+            <td>代表实体引用。</td>
+            <td>Element, ProcessingInstruction, Comment, Text, CDATASection, EntityReference</td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Entity</td>
+            <td>代表实体。</td>
+            <td>Element, ProcessingInstruction, Comment, Text, CDATASection, EntityReference</td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>ProcessingInstruction</td>
+            <td>代表处理指令。</td>
+            <td>None</td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>Comment</td>
+            <td>代表注释。</td>
+            <td>None</td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td>Document</td>
+            <td>代表整个文档（DOM 树的根节点）。</td>
+            <td>Element, ProcessingInstruction, Comment, DocumentType</td>
+        </tr>
+        <js>
+            var x = 1; var ms = 2;
+            var title = '<h1></h1>';
+        </js>
+        <switch name="变量">
+            <case value="值1" break>
+                <tr>
+                    <td>10</td>
+                    <td>DocumentType</td>
+                    <td>向为文档定义的实体提供接口</td>
+                    <td>None</td>
+                </tr>
+            </case>
+            <case value="值2">
+                <tr>
+                    <td>11</td>
+                    <td>DocumentFragment</td>
+                    <td>代表轻量级的 Document 对象，能够容纳文档的某个部分</td>
+                    <td>Element, ProcessingInstruction, Comment, Text, CDATASection, EntityReference</td>
+                </tr>
+            </case>
+            <default>
+                .....
+            </default>
+        </switch>
+
+        <foreach name="list" item="vo">
+            <tr>
+                <td>12</td>
+                <td>Notation</td>
+                <td>代表 DTD 中声明的符号。</td>
+                <td>None</td>
+            </tr>
+        </foreach>
+    </tbody>
+</table>
