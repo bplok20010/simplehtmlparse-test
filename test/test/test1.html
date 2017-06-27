@@ -1,0 +1,55 @@
+<script src="//cdn.bootcss.com/react/15.6.1/react.min.js"></script>
+<script src="//cdn.bootcss.com/react/15.6.1/react-dom.min.js"></script>
+
+<div id="demo">
+</div>
+
+<script>
+
+var h = React.createElement;
+
+function App(){
+    var _$var_div_1_ = [];
+    var _$var_p1_2_ = [];
+    var _$var_span_3_ = [];
+    _$var_span_3_.push("test");
+    var _$var_i_4_ = [];
+    _$var_i_4_.push("1");
+    _$var_span_3_.push(h("i", {}, _$var_i_4_));
+    _$var_span_3_.push("...");
+    _$var_p1_2_.push(h("span", {}, _$var_span_3_));
+    _$var_div_1_.push(h("p1", {"name":"taf1"}, _$var_p1_2_));
+    var _$var_p2_5_ = [];
+    _$var_p2_5_.push("test2...");
+    _$var_div_1_.push(h("p2", {"name":"taf2"}, _$var_p2_5_));
+    var _$var_p3_6_ = [];
+    _$var_p3_6_.push("test3...");
+    _$var_div_1_.push(h("p3", {"name":"taf3"}, _$var_p3_6_));
+    var _$var_p4_7_ = [];
+    _$var_p4_7_.push("test4...");
+    _$var_div_1_.push(h("p4", {"name":"taf3"}, _$var_p4_7_));
+    var _$var_table_8_ = [];
+    for( var i = 0; i < 100; i++ ) {
+        var s = i+ 4;
+        var _$var_tr_9_ = [];
+        var _$var_td_10_ = [];
+        _$var_td_10_.push("1");
+        _$var_tr_9_.push(h("td", {}, _$var_td_10_));
+        var _$var_td_11_ = [];
+        _$var_td_11_.push("2");
+        _$var_tr_9_.push(h("td", {}, _$var_td_11_));
+        var _$var_td_12_ = [];
+        _$var_td_12_.push("3");
+        _$var_tr_9_.push(h("td", {}, _$var_td_12_));
+        var _$var_td_13_ = [];
+        _$var_td_13_.push("4");
+        _$var_tr_9_.push(h("td", {}, _$var_td_13_));
+        _$var_table_8_.push(h("tr", {}, _$var_tr_9_));
+    }
+    _$var_div_1_.push(h("table", {}, _$var_table_8_));
+    return h("div", {}, _$var_div_1_);
+}
+
+ReactDOM.render(h(App), demo);
+
+</script>
